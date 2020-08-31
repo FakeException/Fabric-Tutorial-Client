@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "testclient",
+  "version": "${version}",
+  "name": "TestClient",
+  "description": "Mod description",
+  "authors": [
+    "FakeException"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.darkboy.test.testclient.client.TestClientClient"
+    ],
+    "main": [
+      "me.darkboy.test.testclient.TestClient"
+    ]
+  },
+  "mixins": [
+    "TestClient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.9.2+build.206",
+    "fabric": "*",
+    "minecraft": "1.16.2"
+  }
+}
